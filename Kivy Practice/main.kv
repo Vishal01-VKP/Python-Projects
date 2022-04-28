@@ -1,0 +1,43 @@
+#:kivy 2.0.0
+
+<Grids>
+    GridLayout:
+        size: root.width, root.height
+        cols: 1
+
+        GridLayout:
+            cols: 1
+
+            Label:
+                text: "Converter"
+                font_size: 40
+
+        GridLayout:
+            cols: 2
+
+            Label:
+                text: "Decimal"
+
+            TextInput:
+                id: decimal
+            
+            Label:
+                text: "Binary"
+
+            TextInput:
+                id: binary
+            
+            Label:
+                text: "Hexadecimal"
+
+            TextInput:
+                id: hexadecimal
+            
+            Label:
+                text: "Octal"
+            TextInput:
+                id: octal
+
+        Button:
+            text: "Convert"
+            padding: (40,40)

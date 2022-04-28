@@ -1,0 +1,64 @@
+Welcome to PassLock - Your Password Manager !
+
+This application is written by Vishal Kumar Paswan , an aspiring programmer who is keen on making GUIs as fun . This is one of his creations .
+
+Well , why I am saying "his" ? It's my creation ! I'm Vishal Kumar Paswan and this is one of my bigger achievements in programming .
+
+Being a high-school Indian student , I don't get lots of time coding . Still , I use it on a regular basis .
+
+Anyways , coming to the application .
+
+This application , PassLock , is intended to generate new and strong passwords , strengthen old and weak passwords and store them with high encryption .
+
+{ 
+	With high encryption , I mean I've used a locker to lock the 'Passwords' section of the application . 
+
+	Also , I've used binary encryption in the text file where it's stored , so it's all 0's and 1's . If you're still unsecure about your text folder , hide it .
+
+	Using a password , you can access the file from the GUI . 
+
+}
+
+Coming to the main screen , it has three categories : 
+
+	Password Generator , 
+	Password Strengthener , and 
+	Password Storage .
+
+The Password Generator is a cool thing - just enter the number of characters your password needs and BOOM ! Four passwords , of utmost strength , appear on the underneath text browsers . 
+
+The Password Strengthener is good , but not created that well like the others . What it does , is that it replaces some characters to numbers and symbols on some places in the password to make it stronger .
+
+The Password Storage is something you will need and appreciate . It stores your passwords in the form of :
+
+	Username :  
+	Password : 
+	Purposes : 
+
+and store them in your file in the form of binary code .
+
+To access your passwords , 
+
+	1. Go to the "Passwords" button , at the top right of the Main Window .
+
+	2. Enter the security password : Vishal@229198112 in the given text input .
+
+	3. Click "Confirm" .
+
+At last , I'll list some do's and dont's for using this programme .
+
+Do's :
+
+	Use strong passwords to be store in our application for online activities .
+	Go to the file and clear it , if you want all passwords to be cleaned ( I'll update that soon ) .
+	Store your passwords with a rememberable purpose .
+
+Dont's :
+
+	Don't delete / move / tamper with any files in the given application folder .
+	Don't try to over-experiment values on the application ( God knows what may happen ) .
+	Don't hesitate to contact me on vishalkumarpaswan.21.12.2005@gmail.com to update me regarding any bugs in my application .
+
+Thanks to you all for using my application , and enjoy your day .
+
+													- Vishal

@@ -1,0 +1,3 @@
+64.0 hexadecimal = 64 decimal .
+100.0 sq. m = 0.01 hectare .
+127.0 decimal = 0b1111111 binary .
