@@ -289,7 +289,7 @@ class Ui_Dialog(object):
 "<html><head><meta name=\"qrichtext\" content=\"1\" /><style type=\"text/css\">\n"
 "p, li { white-space: pre-wrap; }\n"
 "</style></head><body style=\" font-family:\'MS Shell Dlg 2\'; font-size:8.25pt; font-weight:400; font-style:normal;\">\n"
-"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Note : Computer will </span><span style=\" font-size:12pt; font-weight:600;\">always</span><span style=\" font-size:12pt;\"> move first , but you will be </span><span style=\" font-size:12pt; font-weight:600;\">considered the winner</span><span style=\" font-size:12pt;\"> if there\'s a tie .</span></p></body></html>"))
+"<p style=\" margin-top:0px; margin-bottom:0px; margin-left:0px; margin-right:0px; -qt-block-indent:0; text-indent:0px;\"><span style=\" font-size:12pt;\">Note : Computer will </span><span style=\" font-size:12pt; font-weight:600;\">always</span><span style=\" font-size:12pt;\"> move first , and will be </span><span style=\" font-size:12pt; font-weight:600;\">considered the winner</span><span style=\" font-size:12pt;\"> if there\'s a tie .</span></p></body></html>"))
 
         self.pushButton_A.clicked.connect(self.game)
         self.pushButton_B.clicked.connect(self.reset)
@@ -437,13 +437,13 @@ class Ui_Dialog(object):
 
             self.result_box.setText(f"Points : {self.my_points}")
 
-            if self.my_points >= 5:
-                self.result_box.setStyleSheet('QTextBrowser {color : green}')
-                self.result_box.setText("You won the game")
-
-            elif self.bot_points >= 5:
+            if self.bot_points >= 5:
                 self.result_box.setStyleSheet('QTextBrowser {color : red}')
                 self.result_box.setText("You lost the game")
+
+            elif self.my_points >= 5:
+                self.result_box.setStyleSheet('QTextBrowser {color : green}')
+                self.result_box.setText("You won the game")
 
             else:
                 loop = QEventLoop()
@@ -473,13 +473,13 @@ class Ui_Dialog(object):
 
                 self.result_box.setText(f"Points : {self.my_points}")
 
-                if self.my_points >= 5:
-                    self.result_box.setStyleSheet('QTextBrowser {color : green}')
-                    self.result_box.setText("You won the game")
-
                 if self.bot_points >= 5:
                     self.result_box.setStyleSheet('QTextBrowser {color : red}')
                     self.result_box.setText("You lost the game")
+
+                elif self.my_points >= 5:
+                    self.result_box.setStyleSheet('QTextBrowser {color : green}')
+                    self.result_box.setText("You won the game")
 
     def reset(self):
         for i in self.grand_list:

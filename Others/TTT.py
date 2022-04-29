@@ -172,8 +172,6 @@ class Ui_Dialog(object):
         self.numbers = [0,1,2,3,4,5,6,7,8]
 
     def game_start(self):
-        # self.your_sign = "O" ; self.bot_sign = "X"
-
         self.bot_choice = int(random.choice(self.numbers))
 
         self.grand_list[self.bot_choice].setText(self.bot_sign)
@@ -194,7 +192,9 @@ class Ui_Dialog(object):
         self.numbers.remove(self.position)
 
         def win_check(self):
-            box1 = self.pushButton_3.text() ; box2 = self.pushButton_4.text() ; box3 = self.pushButton_5.text() ; box4 = self.pushButton_6.text() ; box5 = self.pushButton_7.text() ; box6 = self.pushButton_8.text() ; box7 = self.pushButton_9.text() ; box8 = self.pushButton_10.text() ; box9 = self.pushButton_11.text()
+            box1 = self.pushButton_3.text() ; box2 = self.pushButton_4.text() ; box3 = self.pushButton_5.text() ; 
+            box4 = self.pushButton_6.text() ; box5 = self.pushButton_7.text() ; box6 = self.pushButton_8.text() ; 
+            box7 = self.pushButton_9.text() ; box8 = self.pushButton_10.text() ; box9 = self.pushButton_11.text()
 
             self.win = "Neutral"
 
@@ -226,6 +226,9 @@ class Ui_Dialog(object):
 
         if self.win == "True":
             self.textBrowser.setText("You won the match")
+
+        elif len(self.numbers) == 0 and self.win == "Neutral":
+            self.textBrowser.setText("It's a draw")
 
         else:
             self.bot_choice = int(random.choice(self.numbers))
