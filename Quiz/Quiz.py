@@ -116,7 +116,7 @@ class Ui_Dialog(object):
         self.label.setText(_translate("Dialog", "Quiz !"))
         self.groupBox.setTitle(_translate("Dialog", "Options :"))
         self.pushButton_5.setText(_translate("Dialog", "Save and Next"))
-        self.pushButton_6.setText(_translate("Dialog", "View"))
+        self.pushButton_6.setText(_translate("Dialog", "Reset"))
         self.pushButton_7.setText(_translate("Dialog", "Submit"))
         self.groupBox_2.setTitle(_translate("Dialog", "Time Left :"))
 
@@ -133,6 +133,7 @@ class Ui_Dialog(object):
         self.increment = 0
 
         random.shuffle(questions.questions)
+
         for i in range(10):
             questions.number = i
             questions.number = questions.questions[0][0]

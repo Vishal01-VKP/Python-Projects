@@ -3,7 +3,8 @@ from tabulate import tabulate
 
 base = 3
 side = base**2
-level = 2
+level = 5
+win = False
 
 
 def create_table(row,column):
@@ -24,7 +25,7 @@ board = [[nums[create_table(row, column)] for column in cols] for row in rows]
 
 for x in range(level):
     for i in range(0,81,x+4):
-        board[i//9][i%9] = ""
+        board[i//9][i%9] = "."
 
 
 def table_print():
@@ -77,26 +78,29 @@ def table_print():
     print(sudoku_table)
 
 
+table_print()
+
+
 def win_check():
-    win = False
+    pass
 
 
 while True:
-    table_print()
-
     your_command = input("Enter your command : ").split(",")
 
     function = your_command[0]
-    entered_number = your_command[1]
-    row_number = your_command[2]
-    column_number = your_command[3]
+    entered_number = int(your_command[1])
+    row_number = int(your_command[2])
+    column_number = int(your_command[3])
 
     if function.lower() == "enter":
-        board[row_number+1][column_number+1] = entered_number
+        board[row_number-1][column_number-1] = entered_number
+
+        table_print()
 
         win_check()
 
-        if win_check().win == True:
+        if win == True:
             print("You win")
             break
 
