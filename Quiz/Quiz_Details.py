@@ -43,7 +43,7 @@ class Ui_Dialog(object):
         Dialog.setWindowTitle(_translate("Dialog", "Quiz Details"))
         self.label.setText(_translate("Dialog", "Quiz Details :"))
         
-        with open("Quiz_Data.txt","r") as writer:
+        with open("temp_data.txt","r") as writer:
             data = writer.read()
             self.textBrowser.setText(data)
 

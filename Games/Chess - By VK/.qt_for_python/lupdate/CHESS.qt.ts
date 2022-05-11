@@ -3,11 +3,6 @@
 <context>
     <name>MainWindow</name>
     <message>
-        <location filename="../../CHESS.ui" line="14"/>
-        <source>Chess {410,140,50,50}</source>
-        <translation type="unfinished"></translation>
-    </message>
-    <message>
         <location filename="../../CHESS.ui" line="675"/>
         <source>A</source>
         <translation type="unfinished"></translation>
@@ -103,33 +98,43 @@
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../CHESS.ui" line="963"/>
+        <location filename="../../CHESS.ui" line="971"/>
         <source>Play</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../CHESS.ui" line="976"/>
+        <location filename="../../CHESS.ui" line="992"/>
         <source>Resign</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../CHESS.ui" line="1007"/>
+        <location filename="../../CHESS.ui" line="1023"/>
         <source>Post - Game</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../CHESS.ui" line="1019"/>
+        <location filename="../../CHESS.ui" line="1035"/>
         <source>Save</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../CHESS.ui" line="1032"/>
+        <location filename="../../CHESS.ui" line="1048"/>
         <source>Reset</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
-        <location filename="../../CHESS.ui" line="1055"/>
+        <location filename="../../CHESS.ui" line="1092"/>
         <source>Play Chess - Using Notations !</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../CHESS.ui" line="1070"/>
+        <source>Draw</source>
+        <translation type="unfinished"></translation>
+    </message>
+    <message>
+        <location filename="../../CHESS.ui" line="14"/>
+        <source>Notational Chess</source>
         <translation type="unfinished"></translation>
     </message>
 </context>

@@ -1,20 +1,13 @@
 import random
 
-numbers = []
-numlist = []
-botlist = []
-removed = []
-
-bot_points = 0
-my_points = 0
+numbers = [] ; numlist = [] ; botlist = [] ; removed = []
+var01 = True ; var02 = True ; var03 = True ; var04 = True ; var05 = True ; var06 = True ; var07 = True ; var08 = True ; var09 = True ; var10 = True ; var11 = True ; var12 = True ; var13 = True ; var14 = True ; var15 = True ; var16 = True ; var17 = True ; var18 = True ; var19 = True ; var20 = True ; var21 = True ; var22 = True ; var23 = True ; var24 = True
+bot_points = 0 ; my_points = 0
 
 for i in range(1,26):
-    numlist.append(str(i).zfill(2))
-    botlist.append(str(i).zfill(2))
-    numbers.append(i)
+    numlist.append(str(i).zfill(2)) ; botlist.append(str(i).zfill(2)) ; numbers.append(i)
 
-random.shuffle(numlist)
-random.shuffle(botlist)
+random.shuffle(numlist) ; random.shuffle(botlist)
 
 list1 = [] ; list2 = [] ; list3 = [] ; list4 = [] ; list5 = []
 list6 = [] ; list7 = [] ; list8 = [] ; list9 = [] ; list0 = []
@@ -30,7 +23,7 @@ megalist1 = [list1 , list2 , list3 , list4 , list5]
 megalist2 = [list6 , list7 , list8 , list9 , list0]
 
 def points():
-    global bot_points,my_points, megalist1, megalist2
+    global bot_points,my_points, megalist1, megalist2 , var01, var02, var03, var04, var05, var06, var07, var08, var09, var10, var11, var12, var13, var14, var15, var16, var17, var18, var19, var20, var21, var22, var23, var24
 
     pointlist1 = set(megalist1[0])
     pointlist2 = set(megalist1[1])
@@ -44,6 +37,9 @@ def points():
     pointlistd = {megalist1[0][3],megalist1[1][3],megalist1[2][3],megalist1[3][3],megalist1[4][3]}
     pointliste = {megalist1[0][4],megalist1[1][4],megalist1[2][4],megalist1[3][4],megalist1[4][4]}
 
+    pointlista1 = {megalist1[0][0],megalist1[1][1],megalist1[2][2],megalist1[3][3],megalist1[4][4]}
+    pointliste5 = {megalist1[4][0],megalist1[3][1],megalist1[2][2],megalist1[1][3],megalist1[0][4]}
+
     pointlist6 = set(megalist2[0])
     pointlist7 = set(megalist2[1])
     pointlist8 = set(megalist2[2])
@@ -56,46 +52,50 @@ def points():
     pointlisti = {megalist2[0][3],megalist2[1][3],megalist2[2][3],megalist2[3][3],megalist2[4][3]}
     pointlistj = {megalist2[0][4],megalist2[1][4],megalist2[2][4],megalist2[3][4],megalist2[4][4]}
 
-    if len(pointlist1) == 1 : bot_points += 1
-    if len(pointlist2) == 1 : bot_points += 1
-    if len(pointlist3) == 1 : bot_points += 1
-    if len(pointlist4) == 1 : bot_points += 1
-    if len(pointlist5) == 1 : bot_points += 1
-    if len(pointlista) == 1 : bot_points += 1
-    if len(pointlistb) == 1 : bot_points += 1
-    if len(pointlistc) == 1 : bot_points += 1
-    if len(pointlistd) == 1 : bot_points += 1
-    if len(pointliste) == 1 : bot_points += 1
+    pointlistf6 = {megalist2[0][0],megalist2[1][1],megalist2[2][2],megalist2[3][3],megalist2[4][4]}
+    pointlistj0 = {megalist2[4][0],megalist2[3][1],megalist2[2][2],megalist2[1][3],megalist2[0][4]}
 
-    if len(pointlist6) == 1 : my_points += 1
-    if len(pointlist7) == 1 : my_points += 1
-    if len(pointlist8) == 1 : my_points += 1
-    if len(pointlist9) == 1 : my_points += 1
-    if len(pointlist0) == 1 : my_points += 1
-    if len(pointlistf) == 1 : my_points += 1
-    if len(pointlistg) == 1 : my_points += 1
-    if len(pointlisth) == 1 : my_points += 1
-    if len(pointlisti) == 1 : my_points += 1
-    if len(pointlistj) == 1 : my_points += 1
+    if len(pointlist1) == 1 and var01 == True : my_points += 1 ; var01 = False
+    if len(pointlist2) == 1 and var02 == True : my_points += 1 ; var02 = False
+    if len(pointlist3) == 1 and var03 == True : my_points += 1 ; var03 = False
+    if len(pointlist4) == 1 and var04 == True : my_points += 1 ; var04 = False
+    if len(pointlist5) == 1 and var05 == True : my_points += 1 ; var05 = False
+    if len(pointlista) == 1 and var06 == True : my_points += 1 ; var06 = False
+    if len(pointlistb) == 1 and var07 == True : my_points += 1 ; var07 = False
+    if len(pointlistc) == 1 and var08 == True : my_points += 1 ; var08 = False
+    if len(pointlistd) == 1 and var09 == True : my_points += 1 ; var09 = False
+    if len(pointliste) == 1 and var10 == True : my_points += 1 ; var10 = False
+    if len(pointlista1) == 1 and var11 == True : my_points += 1 ; var11 = False
+    if len(pointliste5) == 1 and var12 == True : my_points += 1 ; var12 = False
+
+    if len(pointlist6) == 1 and var13 == True : bot_points += 1 ; var13 = False
+    if len(pointlist7) == 1 and var14 == True : bot_points += 1 ; var14 = False
+    if len(pointlist8) == 1 and var15 == True : bot_points += 1 ; var15 = False
+    if len(pointlist9) == 1 and var16 == True : bot_points += 1 ; var16 = False
+    if len(pointlist0) == 1 and var17 == True : bot_points += 1 ; var17 = False
+    if len(pointlistf) == 1 and var18 == True : bot_points += 1 ; var18 = False
+    if len(pointlistg) == 1 and var19 == True : bot_points += 1 ; var19 = False
+    if len(pointlisth) == 1 and var20 == True : bot_points += 1 ; var20 = False
+    if len(pointlisti) == 1 and var21 == True : bot_points += 1 ; var21 = False
+    if len(pointlistj) == 1 and var22 == True : bot_points += 1 ; var22 = False
+    if len(pointlistf6) == 1 and var23 == True : bot_points += 1 ; var23 = False
+    if len(pointlistj0) == 1 and var24 == True : bot_points += 1 ; var24 = False
     
 
 while True:
-    bot_choice = random.choice(numbers)
+    choice1 = random.choice(numbers)
+    bot_choice = str(choice1).zfill(2)
 
-    if 0<bot_choice<=5 : req_num = megalist1[0][bot_choice-1] ; megalist1[0][bot_choice-1] = "XX"
-    if 5<bot_choice<=10 : req_num = megalist1[1][bot_choice-6] ; megalist1[1][bot_choice-6] = "XX"
-    if 10<bot_choice<=15 : req_num = megalist1[2][bot_choice-11] ; megalist1[2][bot_choice-11] = "XX"
-    if 15<bot_choice<=20 : req_num = megalist1[3][bot_choice-16] ; megalist1[3][bot_choice-16] = "XX"
-    if 20<bot_choice<=25 : req_num = megalist1[4][bot_choice-21] ; megalist1[4][bot_choice-21] = "XX"
+    if bot_choice in botlist :
+        position = botlist.index(bot_choice)
+        megalist2[(position//5)][(position%5)] = "XX"
 
-    if req_num in megalist2[0] : megalist2[0][list6.index(req_num)] = "XX"
-    if req_num in megalist2[1] : megalist2[1][list7.index(req_num)] = "XX"
-    if req_num in megalist2[2] : megalist2[2][list8.index(req_num)] = "XX"
-    if req_num in megalist2[3] : megalist2[3][list9.index(req_num)] = "XX"
-    if req_num in megalist2[4] : megalist2[4][list0.index(req_num)] = "XX"
+    if bot_choice in numlist:
+        position = numlist.index(bot_choice)
+        megalist1[(position//5)][(position%5)] = "XX"
 
-    numbers.remove(bot_choice)
-    removed.append(bot_choice)
+    numbers.remove(choice1)
+    removed.append(choice1)
 
     print(removed)
 
@@ -110,23 +110,20 @@ while True:
     if my_points >= 5:
         print("BINGO ! \nYou Won")
         break
+    
+    choice2 = int(input("Enter your number : "))
+    my_input = str(choice2).zfill(2)
 
-    my_input = int(input("Enter your position : "))
+    if my_input in numlist:
+        position = numlist.index(my_input)
+        megalist1[(position//5)][(position%5)] = "XX"
 
-    if 0<my_input<=5 : req_num = megalist2[0][my_input-1] ; megalist2[0][my_input-1] =="XX"
-    if 5<my_input<=10 : req_num = megalist2[1][my_input-6] ; megalist2[1][my_input-6] = "XX"
-    if 10<my_input<=15 : req_num = megalist2[2][my_input-11] ; megalist2[2][my_input-11] = "XX"
-    if 15<my_input<=20 : req_num = megalist2[3][my_input-16] ; megalist2[3][my_input-16] = "XX"
-    if 20<my_input<=25 : req_num = megalist2[4][my_input-21] ; megalist2[4][my_input-21] = "XX"
+    if my_input in botlist :
+        position = botlist.index(my_input)
+        megalist2[(position//5)][(position%5)] = "XX"
 
-    if req_num in megalist1[0] : megalist1[0][list1.index(req_num)] = "XX"
-    if req_num in megalist1[1] : megalist1[1][list2.index(req_num)] = "XX"
-    if req_num in megalist1[2] : megalist1[2][list3.index(req_num)] = "XX"
-    if req_num in megalist1[3] : megalist1[3][list4.index(req_num)] = "XX"
-    if req_num in megalist1[4] : megalist1[4][list5.index(req_num)] = "XX"
-
-    numbers.remove(my_input)
-    removed.append(my_input)
+    numbers.remove(choice2)
+    removed.append(choice2)
 
     print(removed)
 

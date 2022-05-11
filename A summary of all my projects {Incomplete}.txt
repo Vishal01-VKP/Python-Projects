@@ -1,0 +1,40 @@
+Here is a summary of all the projects I have made and am making in the present :
+
+1. Clocks :
+
+	StopWatch_Main.py
+	StopWatch_Main.ui
+	StopWatch_Secondary.py
+	StopWatch_Secondary.ui
+	Timer.py
+	Timer.ui
+	TimeRecords.txt
+
+2. Dictionary :
+
+	Dictionary_Updater.ui 
+	Dictionary_Updater.py
+	Dictionary_Searcher.ui
+	Dictionary_Searcher.py
+	Hangman_Game.ui
+	Hangman_Game.py
+
+3. Form
+
+4. Games :
+
+5. Kivy Projects
+
+6. Maths-related projects
+
+7. Notepad
+
+8. PassWord Manager
+
+9. Periodic Table
+
+10. Quiz
+
+11. Online Translation Tool
+
+12. Unit Converter

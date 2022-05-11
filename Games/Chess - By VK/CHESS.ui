@@ -11,7 +11,7 @@
    </rect>
   </property>
   <property name="windowTitle">
-   <string>Chess {410,140,50,50}</string>
+   <string>Notational Chess</string>
   </property>
   <widget class="QWidget" name="centralwidget">
    <widget class="Line" name="line">
@@ -954,10 +954,18 @@
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>192</y>
-       <width>90</width>
-       <height>50</height>
+       <y>190</y>
+       <width>50</width>
+       <height>40</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="text">
       <string>Play</string>
@@ -966,11 +974,19 @@
     <widget class="QPushButton" name="pushButton_B">
      <property name="geometry">
       <rect>
-       <x>130</x>
+       <x>90</x>
        <y>190</y>
-       <width>110</width>
-       <height>50</height>
+       <width>70</width>
+       <height>40</height>
       </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
      </property>
      <property name="text">
       <string>Resign</string>
@@ -980,9 +996,9 @@
      <property name="geometry">
       <rect>
        <x>20</x>
-       <y>270</y>
+       <y>250</y>
        <width>220</width>
-       <height>80</height>
+       <height>100</height>
       </rect>
      </property>
     </widget>
@@ -1006,7 +1022,7 @@
      <property name="title">
       <string>Post - Game</string>
      </property>
-     <widget class="QPushButton" name="pushButton_C">
+     <widget class="QPushButton" name="pushButton_D">
       <property name="geometry">
        <rect>
         <x>20</x>
@@ -1019,7 +1035,7 @@
        <string>Save</string>
       </property>
      </widget>
-     <widget class="QPushButton" name="pushButton_D">
+     <widget class="QPushButton" name="pushButton_E">
       <property name="geometry">
        <rect>
         <x>120</x>
@@ -1032,6 +1048,27 @@
        <string>Reset</string>
       </property>
      </widget>
+    </widget>
+    <widget class="QPushButton" name="pushButton_C">
+     <property name="geometry">
+      <rect>
+       <x>180</x>
+       <y>190</y>
+       <width>60</width>
+       <height>40</height>
+      </rect>
+     </property>
+     <property name="font">
+      <font>
+       <family>Times New Roman</family>
+       <pointsize>14</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="text">
+      <string>Draw</string>
+     </property>
     </widget>
    </widget>
    <widget class="QLabel" name="label_35">
