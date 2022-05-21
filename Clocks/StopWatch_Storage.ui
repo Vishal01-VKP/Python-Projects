@@ -24,8 +24,8 @@
    </property>
    <property name="font">
     <font>
-     <family>Old English Text MT</family>
-     <pointsize>32</pointsize>
+     <family>Cooper Black</family>
+     <pointsize>26</pointsize>
     </font>
    </property>
    <property name="text">
@@ -46,8 +46,8 @@
    </property>
    <property name="font">
     <font>
-     <family>Old English Text MT</family>
-     <pointsize>14</pointsize>
+     <family>Times New Roman</family>
+     <pointsize>16</pointsize>
     </font>
    </property>
    <property name="text">
@@ -68,8 +68,8 @@
    </property>
    <property name="font">
     <font>
-     <family>Old English Text MT</family>
-     <pointsize>14</pointsize>
+     <family>Times New Roman</family>
+     <pointsize>16</pointsize>
     </font>
    </property>
    <property name="text">
@@ -90,8 +90,8 @@
    </property>
    <property name="font">
     <font>
-     <family>Old English Text MT</family>
-     <pointsize>14</pointsize>
+     <family>Times New Roman</family>
+     <pointsize>16</pointsize>
     </font>
    </property>
    <property name="text">
@@ -142,8 +142,8 @@
    </property>
    <property name="font">
     <font>
-     <family>Old English Text MT</family>
-     <pointsize>28</pointsize>
+     <family>Cooper Black</family>
+     <pointsize>26</pointsize>
     </font>
    </property>
    <property name="text">

@@ -20,8 +20,8 @@ class IntroWindow(QtWidgets.QDialog):
     def play_with_friends(self):
         with open("GameData.txt","w") as writer:
             for i in self.database:
-                if i != "":
-                    writer.write(i)
+                if i.text() != "":
+                    writer.write(f"{i.text()}\n")
 
         screen1 = GameWindow()
         screen1.exec_()

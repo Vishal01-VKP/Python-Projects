@@ -47,11 +47,14 @@
    <property name="font">
     <font>
      <family>Old English Text MT</family>
-     <pointsize>12</pointsize>
+     <pointsize>15</pointsize>
     </font>
    </property>
    <property name="title">
     <string>Menu :</string>
+   </property>
+   <property name="flat">
+    <bool>false</bool>
    </property>
    <widget class="QSpinBox" name="spinBox">
     <property name="geometry">
@@ -72,6 +75,9 @@
       <height>30</height>
      </rect>
     </property>
+    <property name="maximum">
+     <number>59</number>
+    </property>
    </widget>
    <widget class="QSpinBox" name="spinBox_3">
     <property name="geometry">
@@ -81,6 +87,9 @@
       <width>50</width>
       <height>30</height>
      </rect>
+    </property>
+    <property name="maximum">
+     <number>59</number>
     </property>
    </widget>
    <widget class="QPushButton" name="pushButton">
@@ -94,8 +103,8 @@
     </property>
     <property name="font">
      <font>
-      <family>Old English Text MT</family>
-      <pointsize>12</pointsize>
+      <family>Times New Roman</family>
+      <pointsize>13</pointsize>
      </font>
     </property>
     <property name="text">
@@ -113,12 +122,12 @@
     </property>
     <property name="font">
      <font>
-      <family>Old English Text MT</family>
-      <pointsize>12</pointsize>
+      <family>Times New Roman</family>
+      <pointsize>13</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>Hours :</string>
+     <string>Hours</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_3">
@@ -132,12 +141,12 @@
     </property>
     <property name="font">
      <font>
-      <family>Old English Text MT</family>
-      <pointsize>12</pointsize>
+      <family>Times New Roman</family>
+      <pointsize>13</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>Minutes :</string>
+     <string>Minutes</string>
     </property>
    </widget>
    <widget class="QLabel" name="label_4">
@@ -151,82 +160,14 @@
     </property>
     <property name="font">
      <font>
-      <family>Old English Text MT</family>
-      <pointsize>12</pointsize>
+      <family>Times New Roman</family>
+      <pointsize>13</pointsize>
      </font>
     </property>
     <property name="text">
-     <string>Seconds :</string>
+     <string>Seconds</string>
     </property>
    </widget>
-  </widget>
-  <widget class="Line" name="line">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>120</y>
-     <width>210</width>
-     <height>3</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="line_2">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>120</y>
-     <width>3</width>
-     <height>80</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="line_3">
-   <property name="geometry">
-    <rect>
-     <x>380</x>
-     <y>120</y>
-     <width>3</width>
-     <height>80</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Vertical</enum>
-   </property>
-  </widget>
-  <widget class="Line" name="line_4">
-   <property name="geometry">
-    <rect>
-     <x>170</x>
-     <y>200</y>
-     <width>210</width>
-     <height>3</height>
-    </rect>
-   </property>
-   <property name="orientation">
-    <enum>Qt::Horizontal</enum>
-   </property>
-  </widget>
-  <widget class="QTextBrowser" name="textBrowser">
-   <property name="geometry">
-    <rect>
-     <x>190</x>
-     <y>140</y>
-     <width>170</width>
-     <height>40</height>
-    </rect>
-   </property>
-   <property name="font">
-    <font>
-     <family>Times New Roman</family>
-     <pointsize>18</pointsize>
-    </font>
-   </property>
   </widget>
   <widget class="QLabel" name="label_5">
    <property name="geometry">
@@ -261,8 +202,8 @@
    </property>
    <property name="font">
     <font>
-     <family>Old English Text MT</family>
-     <pointsize>12</pointsize>
+     <family>Times New Roman</family>
+     <pointsize>13</pointsize>
     </font>
    </property>
    <property name="text">
@@ -280,8 +221,8 @@
    </property>
    <property name="font">
     <font>
-     <family>Old English Text MT</family>
-     <pointsize>12</pointsize>
+     <family>Times New Roman</family>
+     <pointsize>13</pointsize>
     </font>
    </property>
    <property name="text">
@@ -299,8 +240,8 @@
    </property>
    <property name="font">
     <font>
-     <family>Old English Text MT</family>
-     <pointsize>12</pointsize>
+     <family>Times New Roman</family>
+     <pointsize>13</pointsize>
     </font>
    </property>
    <property name="text">
@@ -318,13 +259,60 @@
    </property>
    <property name="font">
     <font>
-     <family>Old English Text MT</family>
-     <pointsize>12</pointsize>
+     <family>Times New Roman</family>
+     <pointsize>13</pointsize>
     </font>
    </property>
    <property name="text">
     <string>Delete</string>
    </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>120</y>
+     <width>210</width>
+     <height>80</height>
+    </rect>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::Box</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Plain</enum>
+   </property>
+   <property name="lineWidth">
+    <number>3</number>
+   </property>
+   <widget class="QTextBrowser" name="textBrowser">
+    <property name="geometry">
+     <rect>
+      <x>20</x>
+      <y>20</y>
+      <width>170</width>
+      <height>40</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Times New Roman</family>
+      <pointsize>18</pointsize>
+     </font>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::Panel</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Plain</enum>
+    </property>
+    <property name="lineWidth">
+     <number>2</number>
+    </property>
+    <property name="midLineWidth">
+     <number>0</number>
+    </property>
+   </widget>
   </widget>
  </widget>
  <resources/>

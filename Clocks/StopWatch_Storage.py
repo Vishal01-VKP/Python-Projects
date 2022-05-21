@@ -30,4 +30,4 @@ class StopWatch_Storage(QtWidgets.QDialog):
         description = self.plainTextEdit.toPlainText()
 
         with open("TimeRecords.txt","a") as writer:
-            writer.write(f"{'='*20} ID : {detail_id} {'='*20}\n\nTime Taken : {time_taken}\nDescription : {description}\n\n")
+            writer.write(f"ID : {detail_id}\n\nTime Taken : {time_taken}\nDescription : {description}\n\n{'='*30}\n\n")

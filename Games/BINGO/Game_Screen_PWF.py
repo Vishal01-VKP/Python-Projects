@@ -20,22 +20,6 @@ class GameWindow(QtWidgets.QDialog):
 
         self.buttons_list = {num:QtWidgets.QPushButton(self.frame) for num in range(1,26)}
 
-        # self.players_list = []
-
-        # with open("GameData.txt","r") as reader:
-        #     data = reader.read().split("\n")
-
-        #     for num in range(15):
-        #         for i in data:
-        #             self.players_list.append(i)
-
-        #     self.numbers_list = {var:random.shuffle(list(range(1,26))) for var in data}
-        #     self.information = {self.players_list[i+1]:self.numbers_list[i+1] for i in range(len(data)) for j in range(15)}
-
-        # self.index = 1
-
-        # self.update()
-
         for i in range(25):
             self.buttons_list[i+1].setGeometry((i//5)*60, (i%5)*60, 60, 60)
             self.buttons_list[i+1].setText(self.numbers_list[i])
@@ -49,6 +33,12 @@ class GameWindow(QtWidgets.QDialog):
     def play(self,button):
         button.setStyleSheet("QPushButton { color : blue }")
         button.setText("XX")
+
+        self.verify()
+
+
+    def verify(self):
+        pass
 
 
 if __name__ == "__main__":
