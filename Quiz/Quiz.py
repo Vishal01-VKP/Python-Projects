@@ -198,7 +198,7 @@ class Ui_Dialog(object):
             writer.write(f"Question {questions.number+1} : {questions.questions[questions.number][1]}\n\na. {self.pushButton.text()}\nb. {self.pushButton_2.text()}\nc. {self.pushButton_3.text()}\nd. {self.pushButton_4.text()}\n\nYour Answer : {button.text()}\nCorrect Answer : {questions.questions[questions.number][6]}\n\n{'='*81}\n\n")
 
         with open("temp_data.txt","a") as writer:
-                writer.write(f"Question {questions.number+1} : {questions.questions[questions.number][1]}\n\na. {self.pushButton.text()}\nb. {self.pushButton_2.text()}\nc. {self.pushButton_3.text()}\nd. {self.pushButton_4.text()}\n\nYour Answer : {button.text()}\nCorrect Answer : {questions.questions[questions.number][6]}\n\n{'='*81}\n\n")        
+            writer.write(f"Question {questions.number+1} : {questions.questions[questions.number][1]}\n\na. {self.pushButton.text()}\nb. {self.pushButton_2.text()}\nc. {self.pushButton_3.text()}\nd. {self.pushButton_4.text()}\n\nYour Answer : {button.text()}\nCorrect Answer : {questions.questions[questions.number][6]}\n\n{'='*81}\n\n")        
 
         if button.text() == questions.questions[questions.number][6]:
             self.score += 1

@@ -11,7 +11,6 @@ questions = [
                 [number, "Which city is also known as the 'Cashew Capital of the World' ?", "Kolkata", "Mumbai", "Kolam", "Delhi", "Kolam"],
                 [number, "Which city is also known as the 'Oxford of the East' ?", "Kolkata", "Mumbai", "Pune", "Delhi", "Pune"],
                 [number, "Which city is also known as the 'Abode of the God' ?", "Kolkata", "Mumbai", "Prayagraj", "Delhi", "Prayagraj"],
-                [number, "What is the formula to find the volume of a cone ?", "pi*r*r*h", "r*h*l", "pi*r*r*h/3", "2*r*r*h", "pi*r*r*h/3"]
                 # [number, "Which city is also known as the 'Abode of the God' ?", "Kolkata", "Mumbai", "Prayagraj", "Delhi", "Prayagraj"],
                 # [number, "Which city is also known as the 'Abode of the God' ?", "Kolkata", "Mumbai", "Prayagraj", "Delhi", "Prayagraj"],
                 # [number, "Which city is also known as the 'Abode of the God' ?", "Kolkata", "Mumbai", "Prayagraj", "Delhi", "Prayagraj"],
