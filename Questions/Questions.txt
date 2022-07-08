@@ -1,0 +1,12 @@
+Questions :
+
+001. What is 0**0 ?
+002. How to convert a decimal number to an octal number ?
+003. How to delete temporary files automatically ?
+004. How to print a table with user inputs , with limited input commands ?
+005. How to make all possible pairs of a list ?
+006. How to find out if a number is an armstrong number or not ?
+007. How to name the upcoming elements in the periodic table in a smooth and hassle-free manner ?
+008. How to convert decimal number into any other number system type ?
+009. How to convert a number of any system into a decimal number ?
+010. How to check if a string is a palindrome or not ?

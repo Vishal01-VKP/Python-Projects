@@ -182,11 +182,11 @@ class Chess_App(QtWidgets.QMainWindow):
             self.draw = True
             self.end_the_game()
 
-        self.chessboard()
-        self.show_board()
-
         for i in range(64):
             self.Chess_Board[i].clicked.connect(self.initiate_move)
+
+        self.chessboard()
+        self.show_board()
 
         self.move = ""
         self.move_name = ""

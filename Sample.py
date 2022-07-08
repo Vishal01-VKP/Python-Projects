@@ -9,7 +9,7 @@ class Class(x): # 'x' can either be 'QtWidgets.QMainWindow' or 'QtWidgets.QDialo
     def __init__(self):
         super(Class, self).__init__()
 
-        uic.loadUi("")
+        uic.loadUi("") # The name of the ui file will be inserted here .
 
         self.show()
 
