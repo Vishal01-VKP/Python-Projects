@@ -1,4 +1,4 @@
-Hello Everyone !
+2Hello Everyone !
 
 I'm Vishal Kumar Paswan , an aspiring Python coder who is currently 17 years old . 
 
@@ -10,4 +10,4 @@ My current GUI projects will be in the 'GUIs' section .
 
 I've also started to learn Kivy and make some basic GUIs , but if anyone knows about a well known area where one can learn more about Kivy , please recommend that here as well .
 
-Other files are also here , and if someone wants to know more , comment here or at : www.vkpythonprojects.blogspot.com . 
+Other files are also here , and if someone wants to know more , comment here or at www.vkpythonprojects.blogspot.com . 
