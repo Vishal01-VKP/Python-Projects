@@ -1,0 +1,4 @@
+MS Shell Dlg 2
+14
+black
+white

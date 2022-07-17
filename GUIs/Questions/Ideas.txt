@@ -1,0 +1,7 @@
+Ugly number or not (Ugly numbers : only have 2,3,5 as factors)
+
+Pascal's Triangle
+
+Perfect number (sum of factors equal to the number)
+
+
